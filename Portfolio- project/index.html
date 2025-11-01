@@ -6,11 +6,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/a2d9a7b4bb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <!-- Accessibility: Skip to main content -->
-    <a href="#main-content">Skip to main content</a>
 
     <!-- Header and Navigation -->
     <header>
@@ -46,15 +44,16 @@
         <!-- Projects Section -->
         <section id="projects">
             <h2>My Projects</h2>
-            <ul>
-                <li><strong>Portfolio Website:</strong> A personal one-page profile.</li>
-                <li><strong>Notes App:</strong> A simple app to save and view notes.</li>
-                <li><strong>Calculator:</strong> A basic calculator using JavaScript.</li>
-            </ul>
+            <img src="project1.jpg" alt="Project 1 Preview" width="500"/>
+            <h2>Project 1</h2>
+            <p>A stylish, interactive web page.</p>
+            <img src="project2.jpg" alt="Project 2 Preview" width="500"/>
+            <h2>Project 2</h2>
+            <p>A design portfolio you are going to love.</p>
         </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
+        
+        <!-- Skills Section -->  
+        <section id="skills"> 
             <h2>Technical Skills</h2>
             <table border="1" cellpadding="5">
                 <tr>
@@ -79,18 +78,27 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br><br>
-
-                <button type="submit">Send</button>
-            </form>
+            <form class="contact-form">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="Your Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Your Email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message:</label></td>
+                        <td><textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <button type="submit" class="btn">Send</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>   
         </section>
 
     </main>

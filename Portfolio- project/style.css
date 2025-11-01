@@ -8,13 +8,12 @@ body {
 }
 
 header {
-    background: #4b0082;
+    background: #490101;
     color: white;
-    padding: 15px 0;
+    padding: 25px 0 15px 0;
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 10;
 }
 
 header h1 {
@@ -40,26 +39,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #8a232f;
 }
 
 #theme-toggle {
     position: absolute;
     right: 20px;
     top: 15px;
-    background: #ffd700;
+    background: #ba3131;
     border: none;
     border-radius: 50%;
     padding: 8px 10px;
     font-size: 18px;
     cursor: pointer;
-    color: #4b0082;
+    color: #3a0105;
     transition: 0.3s;
 }
 
 #theme-toggle:hover {
     background: white;
-    color: #4b0082;
+    color: #3c0404;
 }
 
 .section {
@@ -68,9 +67,11 @@ nav ul li a:hover {
 }
 
 .section h2 {
-    color: #4b0082;
+    color: #4c010a;
     font-size: 2em;
-    margin-bottom: 15px;
+    margin-bottom: 30px auto;
+    width: 80%;
+    text-align: center;
 }
 
 .section p {
@@ -80,7 +81,7 @@ nav ul li a:hover {
 }
 
 .btn {
-    background: #4b0082;
+    background: #4e0101;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -91,8 +92,8 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: #ffd700;
-    color: #4b0082;
+    background: #861f2e;
+    color: #47010b;
 }
 
 table {
@@ -109,7 +110,7 @@ th, td {
 }
 
 th {
-    background: #4b0082;
+    background: #510606;
     color: white;
 }
 
@@ -118,10 +119,43 @@ tr:nth-child(even) {
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    max-width: 60px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+.projects h1 {
+  font-size: 2rem;
+  margin-bottom: 3px;
+}
+
+.project {
+    margin-bottom: 4px;
+}
+
+.project img {
+  width: 30%;
+  margin-bottom: 1px;
+  border-radius: 1px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project h2 {
+  font-size: 1.2rem;
+  margin: 1px 0 8px 0;
+}
+
+.project p {
+  font-size: 1em;
+  color: #222;
+  margin-bottom: 0;
 }
 
 .card {
@@ -138,17 +172,70 @@ tr:nth-child(even) {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-#contact a {
-    color: #4b0082;
-    text-decoration: none;
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+.contact-table table {
+    border: 3px solid #5c0b0b;
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: #f9f5ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(75, 7, 7, 0.2);
+}
+
+.contact-table td {
+    border: 2px solid #510b0b;
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+.contact-table label {
+    font-weight: 600;
+    color: #610c0c;
+    font-size: 1.1em;
+}
+
+.contact-table input,
+.contact-table textarea {
+    width: 260px;
+    padding: 8px;
+    border: 2px solid #c5282d;
+    border-radius: 6px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-table input:focus,
+.contact-table textarea:focus {
+    border-color: #6b1616;
+    box-shadow: 0 0 6px rgba(95, 10, 10, 0.4);
+    background-color: #fefeff;
+}
+
+.contact-table .btn {
+    margin-top: 10px;
+    background-color: #781010;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-table .btn:hover {
+    background-color: #721313;
+    color: #580707;
 }
 
 footer {
-    background: #4b0082;
+    background: #5f0409;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -160,7 +247,7 @@ footer {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    background: #4b0082;
+    background: #931e0ed9;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -171,8 +258,8 @@ footer {
 }
 
 #topBtn:hover {
-    background: #ffd700;
-    color: #4b0082;
+    background: #6e0c0e;
+    color: #f26464;
 }
 
 .dark-mode {
@@ -182,25 +269,25 @@ footer {
 
 .dark-mode header {
     background: #222;
-    color: #ffd700;
+    color: #620909;
 }
 
 .dark-mode .section h2 {
-    color: #ffd700;
+    color: #982525;
 }
 
 .dark-mode .btn {
-    background: #ffd700;
+    background: #851111;
     color: #1e1e1e;
 }
 
 .dark-mode .btn:hover {
-    background: #4b0082;
+    background: #6d1010;
     color: #fff;
 }
 
 .dark-mode th {
-    background: #ffd700;
+    background: #941515;
     color: #1e1e1e;
 }
 
@@ -210,10 +297,10 @@ footer {
 
 .dark-mode footer {
     background: #222;
-    color: #ffd700;
+    color: #670d0d;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -221,5 +308,6 @@ footer {
     .projects {
         flex-direction: column;
         align-items: center;
+        width: 90%;
     }
 }
